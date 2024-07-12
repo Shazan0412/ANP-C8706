@@ -1,0 +1,16 @@
+package jul1;
+
+public class Sum {
+	
+		   public static void main(String[] args) {
+				
+	       public static int addNumbers(int num1, int num2) {
+	           return num1 + num2;
+	       }
+
+	       public static void main1(String[] args) {
+	           int result = addNumbers(5, 7);
+	           System.out.println("The sum of 5 and 7 is: " + result);
+	       }
+	   }
+}

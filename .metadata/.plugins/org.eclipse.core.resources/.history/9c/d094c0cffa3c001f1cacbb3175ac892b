@@ -1,0 +1,17 @@
+package jul8;
+
+	public class Demo {
+	    public static void main(String[] args) {
+	        PaymentMethod creditCard = new CreditCard("1234-5678-9012-3456", "12/2025");
+	        creditCard.pay(100.0);
+	        System.out.println(creditCard.getPaymentDetails());
+
+	        System.out.println();
+
+	        PaymentMethod payPal = new PayPal("user@example.com");
+	        payPal.pay(50.0);
+	        System.out.println(payPal.getPaymentDetails());
+	    }
+	}
+
+}

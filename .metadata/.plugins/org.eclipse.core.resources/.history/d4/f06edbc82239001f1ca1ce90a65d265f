@@ -1,0 +1,39 @@
+package jul3;
+
+public class Calculator {
+	    
+	    public double calculateArea(double radius) {
+	        return Math.PI * radius * radius;
+	    }
+
+	    
+	    public double calculateArea(double length, double width) {
+	        return length * width;
+	    }
+
+	    public double calculateArea(double base, double height, double width) {
+	        
+	        return (base * height) / 2;
+	    }
+
+	    public static void main(String[] args) {
+	        Calculator calculator = new Calculator();
+
+	    
+	        double circleRadius = 5.0;
+	        double circleArea = calculator.calculateArea(circleRadius);
+	        System.out.println("Area of the circle: " + circleArea);
+
+	        double rectangleLength = 4.0;
+	        double rectangleWidth = 6.0;
+	        double rectangleArea = calculator.calculateArea(rectangleLength, rectangleWidth);
+	        System.out.println("Area of the rectangle: " + rectangleArea);
+
+	        double triangleBase = 3.0;
+	        double triangleHeight = 4.0;
+	        double triangleWidth = 5.0; 
+	        double triangleArea = calculator.calculateArea(triangleBase, triangleHeight, triangleWidth);
+	        System.out.println("Area of the triangle: " + triangleArea);
+	    }
+	}
+

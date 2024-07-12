@@ -1,0 +1,46 @@
+package jul2;
+
+	public class Professor {
+	    private String name;
+
+	    public Professor(String name) {
+	        this.name = name;
+	    }
+
+	    public String getName() {
+	        return name;
+	    }
+	}
+	
+    class Department {
+	    private Professor head;
+	    private String name;
+
+	    public Department(String name, Professor head) {
+	        this.name = name;
+	        this.head = head;
+	    }
+
+	    public Professor getHead() {
+	        return head;
+	    }
+
+	    public String getName() {
+	        return name;
+	    }   
+	}
+
+	
+   class University {
+	    private Department department;
+
+	    public University(Department department) {
+	        this.department = department;
+	    }
+
+	    public Department getDepartment() {
+	        return department;
+	        System.out.println("department");
+	    }
+	}
+

@@ -1,0 +1,50 @@
+package jul2;
+
+	public class Professor {
+	    private String name;
+
+	    public Professor("Sumit") {
+	        this.name = name;
+	    }
+
+	    public String getName() {
+	        return name;
+	    }
+	}
+
+	// Department.java
+	public class Department {
+	    private Professor head;
+	    private String name;
+
+	    public Department(String name, Professor head) {
+	        this.name = name;
+	        this.head = head;
+	    }
+
+	    public Professor getHead() {
+	        return head;
+	    }
+
+	    public String getName() {
+	        return name;
+	    }
+	}
+
+	// University.java
+	public class University {
+	    private Department department;
+
+	    public University(Department department) {
+	        this.department = department;
+	    }
+
+	    public Department getDepartment() {
+	        return department;
+	    }
+	}
+
+	// Main.java (test program)
+	public class Main {
+	    public static void main(String[] args
+}
